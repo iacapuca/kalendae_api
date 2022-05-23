@@ -7,5 +7,6 @@ defmodule KalendaeWeb.Router do
 
   scope "/api", KalendaeWeb do
     pipe_through :api
+    resources "/timeslots", TimeslotController, except: [:new, :edit]
   end
 end
