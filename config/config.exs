@@ -10,6 +10,10 @@ import Config
 config :kalendae,
   ecto_repos: [Kalendae.Repo]
 
+config :jsonapi,
+  # or dasherize
+  field_transformation: :dasherize
+
 # Configures the endpoint
 config :kalendae, KalendaeWeb.Endpoint,
   url: [host: "localhost"],
